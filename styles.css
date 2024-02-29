@@ -60,12 +60,13 @@ header nav ul {
 header nav ul li {
     display: inline;
     margin-right: 20px;
-    border: inset 2px  #0e4656;
-    padding:7px;
-    border-radius: 15px;
+   
 }
 
 header nav ul li a {
+    border: inset 2px  #0e4656;
+    padding:7px;
+    border-radius: 15px;
     color: #fff;
     text-decoration: none;
 }
