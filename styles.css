@@ -60,13 +60,20 @@ header nav ul {
 header nav ul li {
     display: inline;
     margin-right: 20px;
+    border: inset 2px  #0e4656;
+    padding:7px;
+    border-radius: 15px;
 }
 
 header nav ul li a {
     color: #fff;
     text-decoration: none;
 }
+header nav ul li:hover {
+   background-color: #C8A353;
+   color:#fff;
 
+}
 main {
     padding: 20px 0;
 }
@@ -260,6 +267,7 @@ h2 {
     header nav ul li {
         display: block;
         margin-bottom: 10px;
+        
     }
 
     
