@@ -60,17 +60,18 @@ header nav ul {
 header nav ul li {
     display: inline;
     margin-right: 20px;
-   
+    margin-bottom: 12px;
 }
 
 header nav ul li a {
+    
     border: inset 2px  #0e4656;
     padding:7px;
     border-radius: 15px;
     color: #fff;
     text-decoration: none;
 }
-header nav ul li:hover {
+header nav ul li a:hover {
    background-color: #C8A353;
    color:#fff;
 
@@ -241,19 +242,16 @@ h2 {
 /* Tablet */
 @media screen and (max-width: 768px) {
 
-    .paraimg{
-
-       display: block;
-
-        
-        /* Optional: ensures the image does not exceed the height of its container */
- 
+    .paraimg ,   .paraimg img {
+        display:block;
+        object-fit: fill; 
+        width: 100px;
+        height: 100%;/* Optional: ensures the image does not exceed the height of its container */
     }
     .parallax {
         display: none;
-      
-       
     }
+
     .project-cards,
 .exp-cards, .education-cards, .cert-cards {
         display: flex;
@@ -270,6 +268,10 @@ h2 {
         margin-bottom: 10px;
         
     }
+    header nav ul li a{
+       padding: 4px;
+        
+    }
 
     
     
@@ -283,22 +285,14 @@ h2 {
 @media screen and (max-width: 480px) {
    
 
-    .paraimg{
-
-        display:block;
-        
-            width: 100%;
-            height: auto;
-            max-height: 100%; /* Optional: ensures the image does not exceed the height of its container */
-     
-  
+    .paraimg img {
+        display: inline-flex;
+        object-fit: fill; /* Optional: ensures the image does not exceed the height of its container */
+    }
+    .parallax {
+        display: none;
     }
 
-    .parallax {
-        display:  none;
-    
-      
-   }
     .project-cards,
     .exp-cards, .education-cards , .cert-cards{
         display: flex;
@@ -311,8 +305,12 @@ h2 {
     header nav ul li {
         display: block;
         margin-bottom: 10px;
+        margin-right: 10px;
     }
-  
+    header nav ul li a{
+        padding: 4px;
+         
+     }
 
 
 
