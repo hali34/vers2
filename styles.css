@@ -1,0 +1,518 @@
+/* Common styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.cert h2, a{
+    text-decoration: none;
+   
+    color: #333;
+}
+.cert a:hover{
+  font-weight: bolder;
+    color:#C8A353 ;
+   
+}
+.logo{
+    
+    color: #cd900b;
+}
+
+.logo img{
+
+    border: #C8A353;
+    border-width: 5px;
+    border-style: inset;
+
+}
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/* Add CSS styles for the profile picture and header content */
+.about h2 {
+    color: black;
+}
+
+.profile-pic {
+    width: 150px; /* Adjust the size of the profile picture as needed */
+    height: 150px;
+    border-radius: 10%; /* Makes the image round */
+    margin-right: 10px; /* Add some space between the profile picture and the heading */
+  
+}
+
+header {
+    background-color: #062730;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #333;
+}
+
+.skill-bar {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  
+    
+}
+
+.skill-bar span {
+    display: block;
+    height: 20px;
+    width: 0;
+    transition: width 1s ease-in-out, background-color 0.5s ease;
+    color: #fff;
+  
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+
+/* Project and Experience Cards Container */
+/* Education Cards Container */
+.education-cards ,
+.project-cards,
+.exp-cards , .cert-cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Individual Project and Experience Card */
+.project-card {
+    width: calc(46% - 20px);
+    
+    object-fit:cover;  /* Three cards per row with margin */
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s;
+ 
+}
+
+.project-card h2{
+    color: #fff;
+}
+/* Card Hover Effect */
+.education-card:hover,
+.project-card:hover,
+.exp-card:hover, .cert-card:hover {
+    cursor: pointer;
+}
+
+/* Card Overlay */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50, 49, 49, 0.5);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.education-card:hover .overlay,
+.project-card:hover .overlay,
+.exp-card:hover .overlay,.cert-card:hover .overlay {
+    opacity: 1;
+}
+
+/* Description Content */
+.description-content,
+.expdescription-content, .cert-description {
+    display: none; /* Initially hidden */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Delay the animation for a smoother effect */
+
+/* Footer */
+footer {
+    background-color: #062730;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    border-top:10px outset #C8A353;
+   
+}
+
+footer p,
+h2 {
+    margin: 0;
+    color: #fff;
+}
+
+/* Contact form */
+#contact-form {
+    background-color: #062730;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 3px;
+}
+
+#contact-form textarea {
+    resize: none;
+}
+
+#contact-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #C8A353;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Media Queries for responsiveness */
+/* Tablet */
+@media screen and (max-width: 768px) {
+
+    .paraimg{
+
+       display: none;
+
+        
+        /* Optional: ensures the image does not exceed the height of its container */
+ 
+    }
+    .parallax {
+        display: none;
+         display:flex;
+         object-fit: contain;
+         object-position: center;
+         width: 50%;
+         height: auto;
+         max-height: 100%;
+        max-width: 300px;
+        background-attachment: scroll;
+       
+    }
+    .project-cards,
+.exp-cards, .education-cards, .cert-cards {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 90%;
+    }
+
+  
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    
+    .desktop-nav {
+        display: block;
+    }
+
+    /* Show dropdown navigation */
+    .dropdown {
+        display: none;
+        border: #C8A353;
+    }
+
+    /* Hide dropdown content by default */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #77acba;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Show the dropdown content when the dropdown button is clicked */
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+
+}
+
+/* Mobile */
+@media screen and (max-width: 480px) {
+   
+
+    .paraimg{
+
+        display:none;
+        
+            width: 100%;
+            height: auto;
+            max-height: 100%; /* Optional: ensures the image does not exceed the height of its container */
+     
+  
+    }
+
+    .parallax {
+        display:  none;
+        display:flex;
+        object-fit: contain;
+        width: 50%;
+        height: auto;
+        max-height: 100%;
+       max-width: 100px;
+       background-attachment: scroll;
+      
+   }
+    .project-cards,
+    .exp-cards, .education-cards , .cert-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        width: 95%;
+    }
+
+    header nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .desktop-nav {
+        display: block;
+    }
+
+    /* Show dropdown navigation */
+    .dropdown {
+        display: none;
+        border: #C8A353;
+    }
+
+    /* Hide dropdown content by default */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #77acba;
+        min-width: 160px;
+        z-index: 1;
+    }
+
+    /* Change color of dropdown links on hover */
+    .dropdown-content a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    /* Show the dropdown content when the dropdown button is clicked */
+    .dropdown.active .dropdown-content {
+        display: block;
+    }
+
+    .skill-bar span {
+        font-size: 12px;
+    }
+}
+
+.parallax {
+    /* The image used */
+    background-image: url('HumzaAli1.jpg');
+
+    /* Set a specific height */
+    min-height: 500px;
+    max-width: 100%;
+ margin: 0%;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.paraimg  img
+{
+    display: none;
+}
+
+/* Add this CSS to style the close button */
+.close-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.close-button:hover {
+    background-color: #555;
+}
+
+.cont {
+    display: flex;
+}
+
+.column {
+    border-style: groove;
+    border-width: 2px;
+    border-color: #0e4656;
+    border-radius: 5%;
+    flex: 1;
+    padding: 10px;
+}
+
+.column-1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    padding: 10px;
+    color: #fff;
+    margin-bottom: 5px; /* Adjust as needed */
+}
+
+.row a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.row a:hover {
+    border: #ccc;
+    transition-timing-function: ease-in;
+}
+
+.column-2 .row {
+    padding: 20px; /* Custom padding for column 2 rows */
+    /* Example border color */
+}
+
+/* Image sizing for project and experience cards */
+.image {
+    width: 100%;
+    height: 200px; /* Set a fixed height for consistency */
+    object-fit: cover; /* Ensure the image covers the container */
+}
+
+.desktop-nav {
+    display: block; /* Display on desktop */
+}
+
+/* Dropdown Navigation for Tablets and Mobiles */
+.dropdown {
+    display: none; /* Hide by default */
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #062730;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown-content.active {
+    display: block; /* Show the dropdown content when active class is applied */
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+
+/* Individual Education Card */
+.cert-card, 
+.exp-card,.education-card {
+    width: calc(47% - 20px);
+    /* Two cards per row with margin */
+    object-fit:cover; 
+    margin: 10px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+
+/* Description Content */
+.edudescription-content {
+    display: none; /* Initially hidden */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
