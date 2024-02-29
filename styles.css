@@ -270,35 +270,10 @@ h2 {
     }
 
     
-    .desktop-nav {
-        display: block;
-    }
+    
 
     /* Show dropdown navigation */
-    .dropdown {
-        display: none;
-        border: #C8A353;
-    }
 
-    /* Hide dropdown content by default */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #77acba;
-        min-width: 160px;
-        z-index: 1;
-    }
-
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-    /* Show the dropdown content when the dropdown button is clicked */
-    .dropdown.active .dropdown-content {
-        display: block;
-    }
 
 }
 
@@ -319,13 +294,7 @@ h2 {
 
     .parallax {
         display:  none;
-        display:flex;
-        object-fit: contain;
-        width: 50%;
-        height: auto;
-        max-height: 100%;
-       max-width: 100px;
-       background-attachment: scroll;
+    
       
    }
     .project-cards,
@@ -341,35 +310,9 @@ h2 {
         display: block;
         margin-bottom: 10px;
     }
-    .desktop-nav {
-        display: block;
-    }
+  
 
-    /* Show dropdown navigation */
-    .dropdown {
-        display: none;
-        border: #C8A353;
-    }
 
-    /* Hide dropdown content by default */
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #77acba;
-        min-width: 160px;
-        z-index: 1;
-    }
-
-    /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {
-        background-color: #ddd;
-        color: black;
-    }
-
-    /* Show the dropdown content when the dropdown button is clicked */
-    .dropdown.active .dropdown-content {
-        display: block;
-    }
 
     .skill-bar span {
         font-size: 12px;
@@ -460,34 +403,8 @@ h2 {
     display: block; /* Display on desktop */
 }
 
-/* Dropdown Navigation for Tablets and Mobiles */
-.dropdown {
-    display: none; /* Hide by default */
-}
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #062730;
-    min-width: 160px;
-    z-index: 1;
-}
 
-.dropdown-content.active {
-    display: block; /* Show the dropdown content when active class is applied */
-}
-
-.dropdown-content a {
-    color: white;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-}
 
 
 
