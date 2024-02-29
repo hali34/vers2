@@ -235,7 +235,7 @@ h2 {
 
     .paraimg{
 
-       display: none;
+       display: block;
 
         
         /* Optional: ensures the image does not exceed the height of its container */
@@ -243,14 +243,7 @@ h2 {
     }
     .parallax {
         display: none;
-         display:flex;
-         object-fit: contain;
-         object-position: center;
-         width: 50%;
-         height: auto;
-         max-height: 100%;
-        max-width: 300px;
-        background-attachment: scroll;
+      
        
     }
     .project-cards,
@@ -283,7 +276,7 @@ h2 {
 
     .paraimg{
 
-        display:none;
+        display:block;
         
             width: 100%;
             height: auto;
